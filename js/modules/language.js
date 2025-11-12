@@ -145,9 +145,15 @@ const LanguageModule = (function() {
             'btn-contact': 'Contactar',
             'btn-call': 'Llamar',
             'btn-whatsapp': 'WhatsApp',
-            'btn-email': 'Email'
+            'btn-email': 'Email',
+            'team-video-title': 'Video de nuestro equipo',
+            'product-video-title': 'Video sobre el producto',
+
+
         },
         en: {
+            'product-video-title': 'Video about the product',
+            'team-video-title': 'Video about the team',
             'brand': 'ResiCare',
             'nav-home': 'Home',
             'nav-benefits': 'Benefits',

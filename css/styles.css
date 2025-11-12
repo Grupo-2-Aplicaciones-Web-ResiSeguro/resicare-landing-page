@@ -1284,6 +1284,172 @@ label {
   color: var(--white);
   transform: translateY(-2px);
 }
+.team-video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+/* Contenedor general */
+.team-values {
+  width: 100%;
+  max-width: 1200px; /* más grande */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Título */
+.team-values h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor del video (responsive 16:9) */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Mantiene proporción 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Video ocupa todo el contenedor */
+.team-video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Mejor visual en pantallas grandes */
+@media (min-width: 768px) {
+  .team-values h3 {
+    font-size: 2rem;
+  }
+  .team-video-section {
+    padding: 4rem 2rem;
+  }
+  .team-values {
+    max-width: 1280px;
+  }
+}
+
+/* Ajuste para móviles */
+@media (max-width: 480px) {
+  .team-values h3 {
+    font-size: 1.4rem;
+  }
+  .team-video-section {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Sección centrada y espaciosa */
+.product-video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+
+/* Contenedor general más ancho para dar protagonismo al video */
+.product-values {
+  width: 100%;
+  max-width: 1280px; /* destacado en pantallas grandes */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Título */
+.product-values h3 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+/* Lang switcher simple */
+.lang-switcher {
+  margin-bottom: 1rem;
+}
+.lang-switcher .lang-btn {
+  background: transparent;
+  border: 1px solid #ddd;
+  padding: 0.35rem 0.6rem;
+  margin: 0 0.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Wrapper responsive mantiene 16:9, pero con mayor presencia visual */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #000;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+  margin-bottom: 1rem;
+}
+
+/* Iframe ocupa todo el wrapper */
+.product-video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Nota y CTA */
+.video-link-note {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+.video-link-note a {
+  text-decoration: underline;
+}
+
+/* Botones CTA */
+.video-cta {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.video-cta .btn {
+  padding: 0.6rem 0.95rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #0b76ef;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsivo */
+@media (min-width: 992px) {
+  .product-values h3 { font-size: 2.2rem; }
+  .product-values { max-width: 1400px; }
+}
+
+@media (max-width: 480px) {
+  .product-values h3 { font-size: 1.4rem; }
+  .product-video-section { padding: 2rem 0.75rem; }
+  .video-cta .btn { padding: 0.5rem 0.75rem; font-size: 0.9rem; }
+}
 
 /* ===== TEAM VALUES ===== */
 .team-values {
