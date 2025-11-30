@@ -1,6 +1,7 @@
 const LanguageModule = (function() {
     const translations = {
         es: {
+            'nav-access': 'Acceder / Registrarse',
             'brand': 'ResiCare',
             'nav-home': 'Inicio',
             'nav-benefits': 'Beneficios',
@@ -152,6 +153,7 @@ const LanguageModule = (function() {
 
         },
         en: {
+            'nav-access': 'Sign In / Register',
             'product-video-title': 'Video about the product',
             'team-video-title': 'Video about the team',
             'brand': 'ResiCare',
